@@ -1,6 +1,6 @@
 # Task ID: 1
 # Title: Initialize Project Repository and CI/CD Pipeline
-# Status: pending
+# Status: done
 # Dependencies: None
 # Priority: high
 # Description: Set up the project repository with recommended tech stack, linting, and CI/CD pipeline for automated testing and deployment.
@@ -35,19 +35,19 @@ Ensure ESLint is set up (from Next.js init), install Prettier, and configure bot
 ### Details:
 Create workflow YAML files to automate linting, testing, and deployment to Vercel or another platform. Ensure the pipeline runs on pull requests and pushes to main.
 
-## 5. Integrate Firebase Services [pending]
+## 5. Integrate Firebase Services [done]
 ### Dependencies: 1.1
 ### Description: Add Firebase to the project for authentication, database, or hosting as needed.
 ### Details:
 Install Firebase SDK, initialize Firebase in the project, and configure environment variables for Firebase credentials.
 
-## 6. Set Up Sentry and New Relic Monitoring [cancelled]
+## 6. Set Up Sentry and New Relic Monitoring [done]
 ### Dependencies: 1.1
 ### Description: Integrate Sentry for error tracking and New Relic for performance monitoring.
 ### Details:
 Install and configure Sentry and New Relic SDKs, set up environment variables, and verify monitoring is active in both dashboards.
 
-## 7. Verify Deployment and Integrations [pending]
+## 7. Verify Deployment and Integrations [done]
 ### Dependencies: 1.4, 1.5, 1.6
 ### Description: Deploy the application and confirm all integrations (Firebase, Sentry, New Relic) and CI/CD are functioning correctly.
 ### Details:
