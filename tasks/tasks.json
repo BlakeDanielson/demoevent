@@ -16,25 +16,21 @@
           "description": "Create a new Git repository and initialize a Next.js project with TypeScript, ESLint, and the App Router.",
           "dependencies": [],
           "details": "Use the command `npx create-next-app@latest my-project --typescript --eslint --app` and push the initial code to a new GitHub repository.",
-          "status": "pending"
+          "status": "done"
         },
         {
           "id": 2,
           "title": "Install and Configure Tailwind CSS",
           "description": "Set up Tailwind CSS and its dependencies in the Next.js project.",
-          "dependencies": [
-            1
-          ],
+          "dependencies": [1],
           "details": "Install Tailwind CSS, @tailwindcss/postcss, and postcss. Generate Tailwind and PostCSS config files, and update the content paths in tailwind.config.js. Import Tailwind in the global CSS file.",
-          "status": "pending"
+          "status": "done"
         },
         {
           "id": 3,
           "title": "Set Up Linting and Formatting Tools",
           "description": "Configure ESLint and Prettier for code quality and formatting consistency.",
-          "dependencies": [
-            1
-          ],
+          "dependencies": [1],
           "details": "Ensure ESLint is set up (from Next.js init), install Prettier, and configure both tools to work together. Add lint and format scripts to package.json.",
           "status": "pending"
         },
@@ -42,9 +38,7 @@
           "id": 4,
           "title": "Configure CI/CD Pipeline with GitHub Actions",
           "description": "Set up GitHub Actions workflows for linting, testing, and deployment.",
-          "dependencies": [
-            3
-          ],
+          "dependencies": [3],
           "details": "Create workflow YAML files to automate linting, testing, and deployment to Vercel or another platform. Ensure the pipeline runs on pull requests and pushes to main.",
           "status": "pending"
         },
@@ -52,9 +46,7 @@
           "id": 5,
           "title": "Integrate Firebase Services",
           "description": "Add Firebase to the project for authentication, database, or hosting as needed.",
-          "dependencies": [
-            1
-          ],
+          "dependencies": [1],
           "details": "Install Firebase SDK, initialize Firebase in the project, and configure environment variables for Firebase credentials.",
           "status": "pending"
         },
@@ -62,9 +54,7 @@
           "id": 6,
           "title": "Set Up Sentry and New Relic Monitoring",
           "description": "Integrate Sentry for error tracking and New Relic for performance monitoring.",
-          "dependencies": [
-            1
-          ],
+          "dependencies": [1],
           "details": "Install and configure Sentry and New Relic SDKs, set up environment variables, and verify monitoring is active in both dashboards.",
           "status": "pending"
         },
@@ -72,11 +62,7 @@
           "id": 7,
           "title": "Verify Deployment and Integrations",
           "description": "Deploy the application and confirm all integrations (Firebase, Sentry, New Relic) and CI/CD are functioning correctly.",
-          "dependencies": [
-            4,
-            5,
-            6
-          ],
+          "dependencies": [4, 5, 6],
           "details": "Trigger a deployment via the CI/CD pipeline, verify the app is live, and check that Firebase, Sentry, and New Relic are reporting as expected.",
           "status": "pending"
         }
@@ -89,9 +75,7 @@
       "details": "Build a React component for event page creation using Next.js and Tailwind CSS. Support event title, description, date/time, location, organizer info, agenda, Q&A section, and custom branding (logo, colors, fonts). Include hero image, photo gallery, embedded maps, and responsive design. Use React Hook Form for form management and React Query for data fetching. Store event data in PostgreSQL (or Firebase as specified).",
       "testStrategy": "Test event page creation, preview, and display on desktop and mobile. Validate custom branding, visual elements, and responsive behavior.",
       "priority": "high",
-      "dependencies": [
-        1
-      ],
+      "dependencies": [1],
       "status": "pending",
       "subtasks": [
         {
@@ -106,9 +90,7 @@
           "id": 2,
           "title": "Implement Branding Support",
           "description": "Enable customization of event pages with branding elements such as logos, color schemes, and typography.",
-          "dependencies": [
-            1
-          ],
+          "dependencies": [1],
           "details": "Allow event organizers to upload logos and select brand colors/fonts that are reflected throughout the event page.",
           "status": "pending"
         },
@@ -116,9 +98,7 @@
           "id": 3,
           "title": "Develop Hero Section",
           "description": "Create a visually engaging hero section that displays the event name, branding, date, and a prominent call-to-action.",
-          "dependencies": [
-            2
-          ],
+          "dependencies": [2],
           "details": "Incorporate header images or background media and ensure the hero section adapts to branding settings.",
           "status": "pending"
         },
@@ -126,9 +106,7 @@
           "id": 4,
           "title": "Build Media Gallery Component",
           "description": "Develop a gallery to showcase event images and videos, supporting uploads and responsive display.",
-          "dependencies": [
-            2
-          ],
+          "dependencies": [2],
           "details": "Allow organizers to add, remove, and reorder media assets. Optimize for performance and accessibility.",
           "status": "pending"
         },
@@ -136,9 +114,7 @@
           "id": 5,
           "title": "Integrate Interactive Map",
           "description": "Embed an interactive map to display the event location, supporting address lookup and directions.",
-          "dependencies": [
-            1
-          ],
+          "dependencies": [1],
           "details": "Use a mapping library (e.g., Google Maps, Mapbox) and ensure the map is responsive and accessible.",
           "status": "pending"
         },
@@ -146,11 +122,7 @@
           "id": 6,
           "title": "Implement Responsive Design",
           "description": "Ensure all event page components are fully responsive and provide an optimal experience across devices.",
-          "dependencies": [
-            3,
-            4,
-            5
-          ],
+          "dependencies": [3, 4, 5],
           "details": "Use CSS frameworks or custom media queries to adapt layouts, images, and interactive elements for mobile, tablet, and desktop.",
           "status": "pending"
         },
@@ -158,11 +130,7 @@
           "id": 7,
           "title": "Set Up Data Storage and Retrieval",
           "description": "Establish backend data models and APIs for storing and retrieving event details, branding assets, media, and attendee information.",
-          "dependencies": [
-            1,
-            2,
-            4
-          ],
+          "dependencies": [1, 2, 4],
           "details": "Ensure secure, scalable storage and implement CRUD operations for event data.",
           "status": "pending"
         },
@@ -170,12 +138,7 @@
           "id": 8,
           "title": "Integrate Supporting Libraries and Tooling",
           "description": "Connect the event page with necessary libraries for form handling, media uploads, mapping, and state management.",
-          "dependencies": [
-            1,
-            4,
-            5,
-            7
-          ],
+          "dependencies": [1, 4, 5, 7],
           "details": "Select and configure libraries such as React Hook Form, cloud storage SDKs, and mapping APIs. Ensure seamless integration and maintainability.",
           "status": "pending"
         }
@@ -188,9 +151,7 @@
       "details": "Create a registration form component with customizable fields (required/optional), file upload, and group registration. Support free tickets and ticket quantity limits. Store registration data in PostgreSQL (or Firebase). Use React Hook Form for form validation and submission. Provide real-time feedback and confirmation to users.",
       "testStrategy": "Test registration flow, form validation, group registration, and file upload. Verify data is stored correctly and confirmation is displayed.",
       "priority": "high",
-      "dependencies": [
-        2
-      ],
+      "dependencies": [2],
       "status": "pending",
       "subtasks": [
         {
@@ -205,9 +166,7 @@
           "id": 2,
           "title": "Customize Form Fields",
           "description": "Define and implement customizable fields to capture required user information, allowing for dynamic field addition or removal based on event or registration type.",
-          "dependencies": [
-            1
-          ],
+          "dependencies": [1],
           "details": "Ensure only necessary information is collected, use dropdowns/radio buttons for simplicity, and provide tooltips for complex fields. Allow for field validation and conditional logic where needed.[3][4][5]",
           "status": "pending"
         },
@@ -215,9 +174,7 @@
           "id": 3,
           "title": "Implement File Upload Functionality",
           "description": "Enable users to upload files (e.g., ID, tickets, supporting documents) as part of the registration process.",
-          "dependencies": [
-            2
-          ],
+          "dependencies": [2],
           "details": "Integrate secure file upload components with validation for file type and size. Ensure compatibility across devices and browsers, and provide clear instructions for users.[3][5]",
           "status": "pending"
         },
@@ -225,9 +182,7 @@
           "id": 4,
           "title": "Develop Group Registration Logic",
           "description": "Allow users to register multiple participants in a single submission, handling group data entry, validation, and association.",
-          "dependencies": [
-            2
-          ],
+          "dependencies": [2],
           "details": "Design the form to dynamically add/remove participant sections, validate group data, and ensure data integrity for all group members.[3][5]",
           "status": "pending"
         },
@@ -235,9 +190,7 @@
           "id": 5,
           "title": "Integrate Ticket Management",
           "description": "Incorporate ticket selection, pricing, and allocation into the registration workflow.",
-          "dependencies": [
-            4
-          ],
+          "dependencies": [4],
           "details": "Provide options for ticket types, quantities, and pricing. Ensure real-time availability updates and validation to prevent overselling.[3]",
           "status": "pending"
         },
@@ -245,10 +198,7 @@
           "id": 6,
           "title": "Set Up Data Storage and Integrity",
           "description": "Design and implement secure, scalable storage for registration data, including user details, files, and ticket information.",
-          "dependencies": [
-            3,
-            5
-          ],
+          "dependencies": [3, 5],
           "details": "Ensure data is stored securely, supports scalability, and maintains integrity across all registration scenarios. Implement backup and recovery mechanisms.",
           "status": "pending"
         },
@@ -269,10 +219,7 @@
       "details": "Add support for private events with unique URLs and invitation-only registration. Implement guest list management and secure access control. Use Firebase Auth for authentication and role-based access. Store private event settings and guest lists in PostgreSQL (or Firebase).",
       "testStrategy": "Test private event creation, invitation-only registration, and guest list management. Verify secure access and role-based permissions.",
       "priority": "medium",
-      "dependencies": [
-        2,
-        3
-      ],
+      "dependencies": [2, 3],
       "status": "pending",
       "subtasks": []
     },
@@ -283,10 +230,7 @@
       "details": "Implement Google Calendar API integration for event scheduling. Automatically populate event details, handle time zones, and configure reminder settings. Support ICS file download. Use the official Google Calendar Node.js client library (googleapis v120+).",
       "testStrategy": "Test calendar event creation, time zone handling, reminder settings, and ICS file download. Verify events appear correctly in Google Calendar.",
       "priority": "medium",
-      "dependencies": [
-        2,
-        3
-      ],
+      "dependencies": [2, 3],
       "status": "pending",
       "subtasks": [
         {
@@ -301,9 +245,7 @@
           "id": 2,
           "title": "Event Data Mapping",
           "description": "Map event data structures between the external API and the internal application model, handling field mismatches and data normalization.",
-          "dependencies": [
-            1
-          ],
+          "dependencies": [1],
           "details": "Analyze API event schemas, define internal event model, implement transformation logic to convert between formats, and validate with sample data.",
           "status": "pending"
         },
@@ -311,9 +253,7 @@
           "id": 3,
           "title": "Time Zone Handling",
           "description": "Implement robust time zone management to ensure event times are accurately converted and displayed across different regions.",
-          "dependencies": [
-            2
-          ],
+          "dependencies": [2],
           "details": "Identify time zone fields in API and internal models, use libraries for time zone conversion, and test with events in multiple time zones.",
           "status": "pending"
         },
@@ -321,9 +261,7 @@
           "id": 4,
           "title": "Reminder Configuration",
           "description": "Enable configuration and synchronization of event reminders, supporting both default and custom reminder settings.",
-          "dependencies": [
-            3
-          ],
+          "dependencies": [3],
           "details": "Map reminder options from API, allow user-defined reminders, and ensure reminders are correctly set and triggered in both systems.",
           "status": "pending"
         },
@@ -331,9 +269,7 @@
           "id": 5,
           "title": "ICS File Support",
           "description": "Add support for importing and exporting events in ICS (iCalendar) file format, ensuring compatibility with major calendar applications.",
-          "dependencies": [
-            4
-          ],
+          "dependencies": [4],
           "details": "Implement ICS parsing and generation, map ICS fields to internal event model, and test interoperability with external calendar tools.",
           "status": "pending"
         }
@@ -346,9 +282,7 @@
       "details": "Create a referral code generation and tracking system. Store referral codes and usage in PostgreSQL (or Firebase). Build an analytics dashboard to track referral sources, conversion rates, and network effects. Visualize referral chains. Use React Query for data fetching and visualization libraries (e.g., Chart.js v4).",
       "testStrategy": "Test referral code generation, tracking, and analytics. Verify visualization and data export functionality.",
       "priority": "medium",
-      "dependencies": [
-        3
-      ],
+      "dependencies": [3],
       "status": "pending",
       "subtasks": [
         {
@@ -363,9 +297,7 @@
           "id": 2,
           "title": "Build Referral Tracking System",
           "description": "Develop the core tracking logic to monitor referral code usage and conversions",
-          "dependencies": [
-            1
-          ],
+          "dependencies": [1],
           "details": "Create database schema with tables for users, referral_codes, and referrals. Implement API endpoints for code redemption and validation. Add logic to prevent duplicate referrals from the same user. Track referral status (pending, converted, expired). Implement attribution logic to correctly identify the referrer.",
           "status": "pending"
         },
@@ -373,9 +305,7 @@
           "id": 3,
           "title": "Develop Analytics Data Collection",
           "description": "Create a system to collect and store all relevant referral metrics and events",
-          "dependencies": [
-            2
-          ],
+          "dependencies": [2],
           "details": "Implement event tracking for all referral actions (code generation, sharing, clicks, conversions). Create data aggregation functions for real-time and historical analysis. Set up data storage with appropriate indexing for quick retrieval. Implement data validation and cleaning processes.",
           "status": "pending"
         },
@@ -383,9 +313,7 @@
           "id": 4,
           "title": "Build Analytics Dashboard",
           "description": "Create an interface to display key referral program metrics and performance indicators",
-          "dependencies": [
-            3
-          ],
+          "dependencies": [3],
           "details": "Design dashboard layout with key performance indicators (conversion rate, total referrals, active codes). Implement filtering capabilities by date range, user segments, and campaign. Create admin views for program management. Add user-specific views for individual referrers to track their performance.",
           "status": "pending"
         },
@@ -393,9 +321,7 @@
           "id": 5,
           "title": "Implement Data Visualization Components",
           "description": "Develop visual representations of referral data to improve understanding and insights",
-          "dependencies": [
-            4
-          ],
+          "dependencies": [4],
           "details": "Create charts and graphs for key metrics (bar charts for conversions, line charts for trends over time). Implement heat maps for geographic distribution of referrals. Add funnel visualizations to track the referral journey. Ensure all visualizations are responsive and accessible.",
           "status": "pending"
         },
@@ -403,9 +329,7 @@
           "id": 6,
           "title": "Create Data Export Functionality",
           "description": "Develop capabilities to export referral data in various formats for external analysis",
-          "dependencies": [
-            3
-          ],
+          "dependencies": [3],
           "details": "Implement export options in multiple formats (CSV, JSON, Excel). Create scheduled export functionality for automated reporting. Add filtering options for customized exports. Implement security measures to protect sensitive data during export. Add pagination for large data exports.",
           "status": "pending"
         }
@@ -418,10 +342,7 @@
       "details": "Integrate an email service provider (SendGrid or Mailgun) for automated emails. Create customizable templates for confirmation, reminders, thank you, feedback, and follow-up emails. Include personalization tokens, calendar attachments, and unsubscribe management. Use the official SendGrid/Mailgun Node.js SDKs (latest versions).",
       "testStrategy": "Test email template rendering, scheduling, and delivery. Verify personalization, calendar attachments, and unsubscribe functionality.",
       "priority": "medium",
-      "dependencies": [
-        3,
-        5
-      ],
+      "dependencies": [3, 5],
       "status": "pending",
       "subtasks": []
     },
@@ -432,10 +353,7 @@
       "details": "Build data export functionality (CSV, Excel) with custom field selection and filtering. Create an analytics dashboard to display registration metrics, attendance, referral performance, and email engagement. Use React Query for data fetching and export libraries (e.g., exceljs v4, csv-writer v6).",
       "testStrategy": "Test data export in multiple formats, filtering, and dashboard visualization. Verify accuracy of metrics and export data.",
       "priority": "medium",
-      "dependencies": [
-        3,
-        6
-      ],
+      "dependencies": [3, 6],
       "status": "pending",
       "subtasks": []
     },
@@ -446,10 +364,7 @@
       "details": "Implement JWT-based authentication with Firebase Auth. Add role-based access control (RBAC) for organizers, attendees, and admins. Encrypt sensitive data (AES-256), enforce HTTPS (TLS 1.3), and implement input validation, SQL injection prevention, and XSS protection. Use rate limiting (100 requests/min/IP).",
       "testStrategy": "Test authentication, role-based access, data encryption, and security headers. Verify rate limiting and input validation.",
       "priority": "high",
-      "dependencies": [
-        1,
-        2
-      ],
+      "dependencies": [1, 2],
       "status": "pending",
       "subtasks": [
         {
@@ -464,9 +379,7 @@
           "id": 2,
           "title": "Role-Based Access Control (RBAC) Implementation",
           "description": "Design and enforce RBAC policies to manage user permissions based on roles.",
-          "dependencies": [
-            1
-          ],
+          "dependencies": [1],
           "details": "Define roles and permissions, create a clear hierarchy, apply the principle of least privilege, and use policy-as-code or external authorization systems for scalability and maintainability.",
           "status": "pending"
         },
@@ -474,9 +387,7 @@
           "id": 3,
           "title": "Data Encryption",
           "description": "Ensure sensitive data is encrypted both at rest and in transit.",
-          "dependencies": [
-            1
-          ],
+          "dependencies": [1],
           "details": "Implement encryption for databases, file storage, and backups. Use strong encryption protocols (e.g., AES-256) and manage encryption keys securely.",
           "status": "pending"
         },
@@ -484,9 +395,7 @@
           "id": 4,
           "title": "HTTPS Enforcement",
           "description": "Enforce HTTPS across all endpoints to secure data transmission.",
-          "dependencies": [
-            1
-          ],
+          "dependencies": [1],
           "details": "Obtain and configure SSL/TLS certificates, redirect all HTTP traffic to HTTPS, and regularly update certificates.",
           "status": "pending"
         },
@@ -494,9 +403,7 @@
           "id": 5,
           "title": "Input Validation",
           "description": "Implement robust input validation to prevent malicious data from entering the system.",
-          "dependencies": [
-            1
-          ],
+          "dependencies": [1],
           "details": "Validate and sanitize all user inputs on both client and server sides, enforce strict data types, and use allow-lists where possible.",
           "status": "pending"
         },
@@ -504,9 +411,7 @@
           "id": 6,
           "title": "SQL Injection and XSS Prevention",
           "description": "Protect the application from SQL injection and cross-site scripting (XSS) attacks.",
-          "dependencies": [
-            5
-          ],
+          "dependencies": [5],
           "details": "Use parameterized queries, ORM frameworks, and output encoding. Regularly review code for vulnerabilities and apply security patches.",
           "status": "pending"
         },
@@ -514,9 +419,7 @@
           "id": 7,
           "title": "Rate Limiting",
           "description": "Implement rate limiting to prevent abuse and mitigate denial-of-service attacks.",
-          "dependencies": [
-            1
-          ],
+          "dependencies": [1],
           "details": "Set thresholds for API requests, apply per-user or per-IP limits, and provide meaningful error responses when limits are exceeded.",
           "status": "pending"
         },
@@ -524,14 +427,7 @@
           "id": 8,
           "title": "Security Testing",
           "description": "Conduct comprehensive security testing to identify and remediate vulnerabilities.",
-          "dependencies": [
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-          ],
+          "dependencies": [2, 3, 4, 5, 6, 7],
           "details": "Perform automated and manual testing, including penetration testing, vulnerability scanning, and code reviews. Document findings and implement fixes.",
           "status": "pending"
         }
@@ -544,10 +440,7 @@
       "details": "Test and optimize all UI components for mobile and desktop. Use Tailwind CSS for responsive design. Test on Chrome, Firefox, Safari, and Edge. Ensure all forms, buttons, and navigation are accessible and functional on all devices.",
       "testStrategy": "Test platform on multiple devices and browsers. Verify responsive design, accessibility, and functionality.",
       "priority": "medium",
-      "dependencies": [
-        2,
-        3
-      ],
+      "dependencies": [2, 3],
       "status": "pending",
       "subtasks": []
     },
@@ -558,9 +451,7 @@
       "details": "Integrate Sentry for error monitoring, New Relic for performance tracking, Pingdom for uptime monitoring, and CloudWatch for log aggregation. Set up alerts for critical issues and performance degradation.",
       "testStrategy": "Verify monitoring integrations, alerting, and log aggregation. Test error and performance tracking.",
       "priority": "medium",
-      "dependencies": [
-        1
-      ],
+      "dependencies": [1],
       "status": "pending",
       "subtasks": []
     },
@@ -571,19 +462,7 @@
       "details": "Create comprehensive documentation for setup, usage, and API endpoints. Generate user guides for organizers and attendees. Prepare API documentation with examples (OpenAPI/Swagger).",
       "testStrategy": "Review documentation for accuracy and completeness. Test API endpoints against documentation.",
       "priority": "medium",
-      "dependencies": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11
-      ],
+      "dependencies": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
       "status": "pending",
       "subtasks": []
     }

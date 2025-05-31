@@ -39,7 +39,7 @@ Allow organizers to add, remove, and reorder media assets. Optimize for performa
 ### Dependencies: 2.1
 ### Description: Embed an interactive map to display the event location, supporting address lookup and directions.
 ### Details:
-Use a mapping library (e.g., Mapbox) and ensure the map is responsive and accessible.
+Use a mapping library (e.g., Google Maps, Mapbox) and ensure the map is responsive and accessible.
 
 ## 6. Implement Responsive Design [pending]
 ### Dependencies: 2.3, 2.4, 2.5

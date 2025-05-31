@@ -11,13 +11,13 @@ Initialize a Next.js (v14) project with TypeScript (v5), Tailwind CSS (v3), and 
 Verify repository setup, linting, and CI/CD pipeline by running automated tests and deploying a basic landing page. Ensure all integrations (Firebase, Sentry, New Relic) are functional.
 
 # Subtasks:
-## 1. Initialize Repository and Next.js Project [pending]
+## 1. Initialize Repository and Next.js Project [done]
 ### Dependencies: None
 ### Description: Create a new Git repository and initialize a Next.js project with TypeScript, ESLint, and the App Router.
 ### Details:
 Use the command `npx create-next-app@latest my-project --typescript --eslint --app` and push the initial code to a new GitHub repository.
 
-## 2. Install and Configure Tailwind CSS [pending]
+## 2. Install and Configure Tailwind CSS [done]
 ### Dependencies: 1.1
 ### Description: Set up Tailwind CSS and its dependencies in the Next.js project.
 ### Details:
@@ -29,6 +29,11 @@ Install Tailwind CSS, @tailwindcss/postcss, and postcss. Generate Tailwind and P
 ### Details:
 Ensure ESLint is set up (from Next.js init), install Prettier, and configure both tools to work together. Add lint and format scripts to package.json.
 
+## 4. Configure CI/CD Pipeline with GitHub Actions [pending]
+### Dependencies: 1.3
+### Description: Set up GitHub Actions workflows for linting, testing, and deployment.
+### Details:
+Create workflow YAML files to automate linting, testing, and deployment to Vercel or another platform. Ensure the pipeline runs on pull requests and pushes to main.
 
 ## 5. Integrate Firebase Services [pending]
 ### Dependencies: 1.1
@@ -36,10 +41,15 @@ Ensure ESLint is set up (from Next.js init), install Prettier, and configure bot
 ### Details:
 Install Firebase SDK, initialize Firebase in the project, and configure environment variables for Firebase credentials.
 
+## 6. Set Up Sentry and New Relic Monitoring [pending]
+### Dependencies: 1.1
+### Description: Integrate Sentry for error tracking and New Relic for performance monitoring.
+### Details:
+Install and configure Sentry and New Relic SDKs, set up environment variables, and verify monitoring is active in both dashboards.
 
 ## 7. Verify Deployment and Integrations [pending]
 ### Dependencies: 1.4, 1.5, 1.6
-### Description: Deploy the application and confirm all integrations (Firebase) are functioning correctly.
+### Description: Deploy the application and confirm all integrations (Firebase, Sentry, New Relic) and CI/CD are functioning correctly.
 ### Details:
-Trigger a deployment via github push, verify the app is live, and check that Firebase is reporting as expected.
+Trigger a deployment via the CI/CD pipeline, verify the app is live, and check that Firebase, Sentry, and New Relic are reporting as expected.
 
