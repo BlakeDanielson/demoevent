@@ -1,0 +1,61 @@
+# Task ID: 2
+# Title: Implement Core Event Page Creation and Display
+# Status: pending
+# Dependencies: 1
+# Priority: high
+# Description: Develop the event page creation and display functionality with custom branding, event details, and visual elements.
+# Details:
+Build a React component for event page creation using Next.js and Tailwind CSS. Support event title, description, date/time, location, organizer info, agenda, Q&A section, and custom branding (logo, colors, fonts). Include hero image, photo gallery, embedded maps, and responsive design. Use React Hook Form for form management and React Query for data fetching. Store event data in PostgreSQL (or Firebase as specified).
+
+# Test Strategy:
+Test event page creation, preview, and display on desktop and mobile. Validate custom branding, visual elements, and responsive behavior.
+
+# Subtasks:
+## 1. Design Event Form Structure [pending]
+### Dependencies: None
+### Description: Define and implement the form fields required for event creation, including event name, date, time, location, description, and registration options.
+### Details:
+Ensure the form supports validation, error handling, and accessibility best practices.
+
+## 2. Implement Branding Support [pending]
+### Dependencies: 2.1
+### Description: Enable customization of event pages with branding elements such as logos, color schemes, and typography.
+### Details:
+Allow event organizers to upload logos and select brand colors/fonts that are reflected throughout the event page.
+
+## 3. Develop Hero Section [pending]
+### Dependencies: 2.2
+### Description: Create a visually engaging hero section that displays the event name, branding, date, and a prominent call-to-action.
+### Details:
+Incorporate header images or background media and ensure the hero section adapts to branding settings.
+
+## 4. Build Media Gallery Component [pending]
+### Dependencies: 2.2
+### Description: Develop a gallery to showcase event images and videos, supporting uploads and responsive display.
+### Details:
+Allow organizers to add, remove, and reorder media assets. Optimize for performance and accessibility.
+
+## 5. Integrate Interactive Map [pending]
+### Dependencies: 2.1
+### Description: Embed an interactive map to display the event location, supporting address lookup and directions.
+### Details:
+Use a mapping library (e.g., Mapbox) and ensure the map is responsive and accessible.
+
+## 6. Implement Responsive Design [pending]
+### Dependencies: 2.3, 2.4, 2.5
+### Description: Ensure all event page components are fully responsive and provide an optimal experience across devices.
+### Details:
+Use CSS frameworks or custom media queries to adapt layouts, images, and interactive elements for mobile, tablet, and desktop.
+
+## 7. Set Up Data Storage and Retrieval [pending]
+### Dependencies: 2.1, 2.2, 2.4
+### Description: Establish backend data models and APIs for storing and retrieving event details, branding assets, media, and attendee information.
+### Details:
+Ensure secure, scalable storage and implement CRUD operations for event data.
+
+## 8. Integrate Supporting Libraries and Tooling [pending]
+### Dependencies: 2.1, 2.4, 2.5, 2.7
+### Description: Connect the event page with necessary libraries for form handling, media uploads, mapping, and state management.
+### Details:
+Select and configure libraries such as React Hook Form, cloud storage SDKs, and mapping APIs. Ensure seamless integration and maintainability.
+

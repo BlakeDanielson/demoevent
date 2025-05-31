@@ -1,0 +1,43 @@
+# Task ID: 5
+# Title: Integrate Google Calendar API for Event Scheduling
+# Status: pending
+# Dependencies: 2, 3
+# Priority: medium
+# Description: Integrate Google Calendar API to automatically add events to attendees' calendars.
+# Details:
+Implement Google Calendar API integration for event scheduling. Automatically populate event details, handle time zones, and configure reminder settings. Support ICS file download. Use the official Google Calendar Node.js client library (googleapis v120+).
+
+# Test Strategy:
+Test calendar event creation, time zone handling, reminder settings, and ICS file download. Verify events appear correctly in Google Calendar.
+
+# Subtasks:
+## 1. API Integration Setup [pending]
+### Dependencies: None
+### Description: Establish connections with external calendar APIs using official libraries, ensuring authentication and basic data retrieval.
+### Details:
+Identify required APIs, review documentation, set up authentication (OAuth, API keys), and verify connectivity with test requests.
+
+## 2. Event Data Mapping [pending]
+### Dependencies: 5.1
+### Description: Map event data structures between the external API and the internal application model, handling field mismatches and data normalization.
+### Details:
+Analyze API event schemas, define internal event model, implement transformation logic to convert between formats, and validate with sample data.
+
+## 3. Time Zone Handling [pending]
+### Dependencies: 5.2
+### Description: Implement robust time zone management to ensure event times are accurately converted and displayed across different regions.
+### Details:
+Identify time zone fields in API and internal models, use libraries for time zone conversion, and test with events in multiple time zones.
+
+## 4. Reminder Configuration [pending]
+### Dependencies: 5.3
+### Description: Enable configuration and synchronization of event reminders, supporting both default and custom reminder settings.
+### Details:
+Map reminder options from API, allow user-defined reminders, and ensure reminders are correctly set and triggered in both systems.
+
+## 5. ICS File Support [pending]
+### Dependencies: 5.4
+### Description: Add support for importing and exporting events in ICS (iCalendar) file format, ensuring compatibility with major calendar applications.
+### Details:
+Implement ICS parsing and generation, map ICS fields to internal event model, and test interoperability with external calendar tools.
+

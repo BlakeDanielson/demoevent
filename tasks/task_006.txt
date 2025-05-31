@@ -1,0 +1,49 @@
+# Task ID: 6
+# Title: Build Referral Tracking System
+# Status: pending
+# Dependencies: 3
+# Priority: medium
+# Description: Develop a referral tracking system with unique codes, analytics, and visualization.
+# Details:
+Create a referral code generation and tracking system. Store referral codes and usage in PostgreSQL (or Firebase). Build an analytics dashboard to track referral sources, conversion rates, and network effects. Visualize referral chains. Use React Query for data fetching and visualization libraries (e.g., Chart.js v4).
+
+# Test Strategy:
+Test referral code generation, tracking, and analytics. Verify visualization and data export functionality.
+
+# Subtasks:
+## 1. Implement Referral Code Generation Logic [pending]
+### Dependencies: None
+### Description: Create a robust system for generating unique referral codes that are trackable and secure
+### Details:
+Develop code generation using hash-based methods (MD5) or UUID generation. Implement collision detection and handling. Ensure codes are alphanumeric, readable, and of appropriate length (5-8 characters). Add expiration date functionality with configurable timeframes (default 30 days). Include usage limits per code.
+
+## 2. Build Referral Tracking System [pending]
+### Dependencies: 6.1
+### Description: Develop the core tracking logic to monitor referral code usage and conversions
+### Details:
+Create database schema with tables for users, referral_codes, and referrals. Implement API endpoints for code redemption and validation. Add logic to prevent duplicate referrals from the same user. Track referral status (pending, converted, expired). Implement attribution logic to correctly identify the referrer.
+
+## 3. Develop Analytics Data Collection [pending]
+### Dependencies: 6.2
+### Description: Create a system to collect and store all relevant referral metrics and events
+### Details:
+Implement event tracking for all referral actions (code generation, sharing, clicks, conversions). Create data aggregation functions for real-time and historical analysis. Set up data storage with appropriate indexing for quick retrieval. Implement data validation and cleaning processes.
+
+## 4. Build Analytics Dashboard [pending]
+### Dependencies: 6.3
+### Description: Create an interface to display key referral program metrics and performance indicators
+### Details:
+Design dashboard layout with key performance indicators (conversion rate, total referrals, active codes). Implement filtering capabilities by date range, user segments, and campaign. Create admin views for program management. Add user-specific views for individual referrers to track their performance.
+
+## 5. Implement Data Visualization Components [pending]
+### Dependencies: 6.4
+### Description: Develop visual representations of referral data to improve understanding and insights
+### Details:
+Create charts and graphs for key metrics (bar charts for conversions, line charts for trends over time). Implement heat maps for geographic distribution of referrals. Add funnel visualizations to track the referral journey. Ensure all visualizations are responsive and accessible.
+
+## 6. Create Data Export Functionality [pending]
+### Dependencies: 6.3
+### Description: Develop capabilities to export referral data in various formats for external analysis
+### Details:
+Implement export options in multiple formats (CSV, JSON, Excel). Create scheduled export functionality for automated reporting. Add filtering options for customized exports. Implement security measures to protect sensitive data during export. Add pagination for large data exports.
+

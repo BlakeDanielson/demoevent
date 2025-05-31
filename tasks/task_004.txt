@@ -1,0 +1,11 @@
+# Task ID: 4
+# Title: Implement Access Control and Private Event Management
+# Status: pending
+# Dependencies: 2, 3
+# Priority: medium
+# Description: Develop private event management with unique URLs, invitation-only registration, and guest list management.
+# Details:
+Add support for private events with unique URLs and invitation-only registration. Implement guest list management and secure access control. Use Firebase Auth for authentication and role-based access. Store private event settings and guest lists in PostgreSQL (or Firebase).
+
+# Test Strategy:
+Test private event creation, invitation-only registration, and guest list management. Verify secure access and role-based permissions.

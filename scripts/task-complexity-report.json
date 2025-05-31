@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "generatedAt": "2025-05-31T18:22:36.898Z",
+    "tasksAnalyzed": 12,
+    "totalTasks": 12,
+    "analysisCount": 12,
+    "thresholdScore": 5,
+    "projectName": "Taskmaster",
+    "usedResearch": true
+  },
+  "complexityAnalysis": [
+    {
+      "taskId": 1,
+      "taskTitle": "Initialize Project Repository and CI/CD Pipeline",
+      "complexityScore": 8,
+      "recommendedSubtasks": 7,
+      "expansionPrompt": "Break down the setup of the repository, tech stack initialization, linting, CI/CD pipeline configuration, Firebase integration, Sentry and New Relic setup, and deployment verification into clear, actionable subtasks.",
+      "reasoning": "This task involves multiple integrations (Next.js, TypeScript, Tailwind, React Hook Form, ESLint, Prettier, GitHub Actions, Firebase, Sentry, New Relic, Vercel), each with its own configuration and verification steps. The breadth of tooling and the need for a robust, automated pipeline make this a high-complexity foundational task."
+    },
+    {
+      "taskId": 2,
+      "taskTitle": "Implement Core Event Page Creation and Display",
+      "complexityScore": 9,
+      "recommendedSubtasks": 8,
+      "expansionPrompt": "Decompose the event page feature into subtasks for form creation, branding support, visual elements (hero, gallery, maps), responsive design, data storage, and integration with supporting libraries.",
+      "reasoning": "This task requires building a complex, customizable UI with multiple data fields, branding, media handling, and responsive design, all integrated with backend storage and modern React tooling. The number of features and integrations increases both cyclomatic and cognitive complexity."
+    },
+    {
+      "taskId": 3,
+      "taskTitle": "Develop Registration and Ticketing System",
+      "complexityScore": 8,
+      "recommendedSubtasks": 7,
+      "expansionPrompt": "Expand into subtasks for registration form creation, field customization, file upload, group registration, ticket management, data storage, and user feedback/confirmation.",
+      "reasoning": "The registration system must handle dynamic forms, validation, group logic, file uploads, and real-time feedback, all while ensuring data integrity and scalability. This breadth of requirements and user flows adds significant complexity."
+    },
+    {
+      "taskId": 4,
+      "taskTitle": "Implement Access Control and Private Event Management",
+      "complexityScore": 7,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Divide into subtasks for private event creation, unique URL generation, invitation-only registration, guest list management, access control, and secure data storage.",
+      "reasoning": "This task introduces secure access, role management, and private event logic, requiring careful handling of authentication, permissions, and data privacy, but is more focused than the core event or registration systems."
+    },
+    {
+      "taskId": 5,
+      "taskTitle": "Integrate Google Calendar API for Event Scheduling",
+      "complexityScore": 6,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down into subtasks for API integration, event data mapping, time zone handling, reminder configuration, and ICS file support.",
+      "reasoning": "While API integration is non-trivial, the scope is well-defined and leverages official libraries, making the complexity moderate compared to broader system features."
+    },
+    {
+      "taskId": 6,
+      "taskTitle": "Build Referral Tracking System",
+      "complexityScore": 7,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Expand into subtasks for referral code generation, tracking logic, analytics dashboard, data visualization, storage, and export functionality.",
+      "reasoning": "Referral systems require unique code logic, analytics, and visualization, each with their own implementation and testing challenges, but are less complex than core event or registration flows."
+    },
+    {
+      "taskId": 7,
+      "taskTitle": "Implement Email Automation Workflows",
+      "complexityScore": 7,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Decompose into subtasks for email provider integration, template creation, personalization, scheduling, calendar attachment handling, and unsubscribe management.",
+      "reasoning": "Automated email workflows involve third-party integration, template logic, scheduling, and compliance (unsubscribe), requiring careful orchestration but leveraging established SDKs."
+    },
+    {
+      "taskId": 8,
+      "taskTitle": "Develop Data Export and Analytics Dashboard",
+      "complexityScore": 7,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Break down into subtasks for export logic (CSV/Excel), custom field selection, filtering, dashboard UI, metric calculations, and export verification.",
+      "reasoning": "This task combines backend data processing with frontend visualization and export logic, each requiring attention to detail and accuracy, but is a common pattern in modern apps."
+    },
+    {
+      "taskId": 9,
+      "taskTitle": "Implement Security and Authentication",
+      "complexityScore": 9,
+      "recommendedSubtasks": 8,
+      "expansionPrompt": "Expand into subtasks for authentication setup, RBAC, data encryption, HTTPS enforcement, input validation, SQL injection/XSS prevention, rate limiting, and security testing.",
+      "reasoning": "Security is inherently complex, involving multiple layers (auth, RBAC, encryption, validation, rate limiting) and requiring rigorous testing and compliance with best practices."
+    },
+    {
+      "taskId": 10,
+      "taskTitle": "Optimize for Mobile and Cross-Browser Compatibility",
+      "complexityScore": 6,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Divide into subtasks for responsive UI testing, browser compatibility checks, accessibility validation, device-specific optimizations, and bug fixing.",
+      "reasoning": "While essential, this task is bounded in scope and follows established testing and optimization practices, making it moderately complex."
+    },
+    {
+      "taskId": 11,
+      "taskTitle": "Set Up Monitoring and Performance Tracking",
+      "complexityScore": 6,
+      "recommendedSubtasks": 5,
+      "expansionPrompt": "Break down into subtasks for Sentry integration, New Relic setup, Pingdom configuration, CloudWatch log aggregation, and alert setup/testing.",
+      "reasoning": "Monitoring setup involves multiple tools but is largely configuration-driven, with clear integration steps and verification procedures."
+    },
+    {
+      "taskId": 12,
+      "taskTitle": "Implement MVP Launch and Documentation",
+      "complexityScore": 7,
+      "recommendedSubtasks": 6,
+      "expansionPrompt": "Expand into subtasks for user guide creation, API documentation, setup instructions, usage examples, documentation review, and launch checklist.",
+      "reasoning": "Comprehensive documentation and launch prep require coordination across features, clear writing, and technical accuracy, but follow a repeatable process."
+    }
+  ]
+}

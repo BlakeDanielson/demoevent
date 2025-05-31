@@ -1,0 +1,11 @@
+# Task ID: 7
+# Title: Implement Email Automation Workflows
+# Status: pending
+# Dependencies: 3, 5
+# Priority: medium
+# Description: Develop email automation for pre- and post-event communications.
+# Details:
+Integrate an email service provider (SendGrid or Mailgun) for automated emails. Create customizable templates for confirmation, reminders, thank you, feedback, and follow-up emails. Include personalization tokens, calendar attachments, and unsubscribe management. Use the official SendGrid/Mailgun Node.js SDKs (latest versions).
+
+# Test Strategy:
+Test email template rendering, scheduling, and delivery. Verify personalization, calendar attachments, and unsubscribe functionality.

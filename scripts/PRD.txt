@@ -1,0 +1,558 @@
+# Product Requirements Document (PRD)
+## Corporate Event Management Platform
+
+### Version: 1.0
+### Date: December 2024
+### Project: Demo Event Management System
+
+---
+
+## 1. Executive Summary
+
+### 1.1 Product Vision
+A streamlined event management platform that enables companies to create, manage, and track corporate events and parties with automated registration, calendar integration, and comprehensive attendee management.
+
+### 1.2 Target Audience
+- **Primary**: Corporate event organizers, HR departments, marketing teams
+- **Secondary**: Event attendees (employees, clients, partners)
+
+### 1.3 Key Value Propositions
+- Simplified event creation and management
+- Automated attendee tracking and communication
+- Seamless calendar integration (Google only for now)
+- Referral tracking for networking insights
+- Professional branded experience
+
+---
+
+## 2. Product Overview
+
+### 2.1 Core Functionality
+The platform provides a complete event lifecycle management system from creation to post-event analytics, with focus on user experience and automation.
+
+### 2.2 Key Features Summary
+- Dynamic event pages with rich content
+- Flexible ticketing system (free/paid) (No payment or stripe integration for MVP yet)
+- Private event access control
+- Automated calendar integration (Google calendar only for mvp)
+- Referral tracking system
+- Email automation workflows
+- Registration data export
+
+---
+
+## 3. Detailed Feature Requirements
+
+### 3.1 Event Page Creation & Display
+
+#### 3.1.1 Event Information Display
+**Requirements:**
+- Event title and description
+- Date, time, and duration
+- Location details (address, venue name, directions)
+- Event organizer bio/information
+- Detailed event breakdown/agenda
+- Interactive Q&A section
+- Custom branding options (logo, colors, fonts)
+
+**User Stories:**
+- As an event organizer, I want to create a comprehensive event page that showcases all relevant information
+- As an attendee, I want to easily find all event details in one place
+
+#### 3.1.2 Visual Elements
+- Hero image/banner support
+- Photo gallery for venue/previous events
+- Embedded maps for location
+- Responsive design for mobile/desktop
+
+### 3.2 Registration & Ticketing System
+
+#### 3.2.1 Ticket Management
+**Requirements:**
+- Free ticket option
+- Paid ticket support (future enhancement)
+- Ticket quantity limits
+- Group registration options
+
+#### 3.2.2 Registration Form
+**Requirements:**
+- Customizable form fields
+- Required/optional field configuration
+- File upload capability (for special requirements)
+
+**User Stories:**
+- As an organizer, I want to collect specific information from attendees
+- As an attendee, I want a simple registration process
+
+### 3.3 Access Control & Privacy
+
+#### 3.3.1 Private Event Management
+**Requirements:**
+- Unique event URLs for private access
+- Invitation-only registration
+- Guest list management
+
+**User Stories:**
+- As an organizer, I want to control who can access my event
+- As an attendee, I want secure access to private events
+
+### 3.4 Calendar Integration
+
+#### 3.4.1 Automated Calendar Addition
+**Requirements:**
+- Google Calendar integration
+- Automatic event details population
+- Reminder settings configuration
+- Time zone handling
+
+**Technical Specifications:**
+- Google Calendar API integration
+- ICS file format support
+- Timezone conversion accuracy
+
+### 3.5 Referral Tracking System
+
+#### 3.5.1 Invite Link Management
+**Requirements:**
+- Unique referral codes per user
+- Tracking of referral sources
+- Referral analytics dashboard
+- Reward/recognition system for top referrers
+- Referral chain visualization
+
+**User Stories:**
+- As an organizer, I want to know who is driving registrations
+- As a referrer, I want recognition for successful invites
+
+#### 3.5.2 Analytics & Reporting
+- Registration source tracking
+- Referral conversion rates
+- Network effect visualization
+- Export referral data
+
+### 3.6 Email Automation System
+
+#### 3.6.1 Pre-Event Communications
+**Requirements:**
+- Customizable email templates
+- Automated reminder schedule
+- Personalization tokens
+- Event details inclusion
+- Calendar attachment
+- Unsubscribe management
+
+**Email Types:**
+- Registration confirmation
+- 1 week before reminder
+- 1 day before reminder
+- Day-of event details
+
+#### 3.6.2 Post-Event Communications
+**Requirements:**
+- Thank you email automation
+- Event feedback survey
+- Photo sharing links
+- Follow-up resource sharing
+- Next event announcements
+
+### 3.7 Data Export & Management
+
+#### 3.7.1 Registration Data Export
+**Requirements:**
+- CSV export functionality
+- Excel (.xlsx) export
+- Custom field selection
+- Real-time data sync
+- Scheduled exports
+- Data filtering options
+
+**Export Fields:**
+- Attendee name and contact info
+- Registration timestamp
+- Referral source
+- Custom form responses
+- Attendance status
+- Dietary restrictions
+
+#### 3.7.2 Analytics Dashboard
+- Registration metrics
+- Attendance tracking
+- Referral performance
+- Email engagement rates
+- Revenue tracking (for paid events)
+
+---
+
+## 4. Technical Requirements
+
+### 4.1 Platform Requirements
+- Web-based application
+- Mobile-responsive design
+- Cross-browser compatibility
+- SSL security
+- GDPR compliance
+
+### 4.2 Integration Requirements
+- Google Calendar API
+- Email service provider (SendGrid/Mailgun)
+- Payment processing (Stripe) - future
+- Analytics tracking (Google Analytics)
+
+### 4.3 Performance Requirements
+- Page load time < 3 seconds
+- 99.9% uptime
+- Support for 1000+ concurrent users
+- Mobile optimization
+
+---
+
+## 5. User Experience Requirements
+
+### 5.1 Event Organizer Experience
+- Intuitive event creation wizard
+- Real-time preview
+- Bulk operations for attendee management
+- Comprehensive analytics dashboard
+
+### 5.2 Attendee Experience
+- One-click registration
+- Mobile-optimized forms
+- Instant confirmation
+- Easy calendar addition
+- Clear event information hierarchy
+
+---
+
+## 6. Security & Privacy
+
+### 6.1 Data Protection
+- Encrypted data storage
+
+### 6.2 Access Security
+- Secure authentication
+- Role-based permissions
+
+---
+
+## 7. Success Metrics
+
+### 7.1 Key Performance Indicators (KPIs)
+- Registration conversion rate
+
+### 7.2 Business Metrics
+- Number of events created
+- Total registrations processed
+
+---
+
+## 8. Implementation Phases
+
+### 8.1 Phase 1 (MVP) - 4-6 weeks
+- Basic event page creation
+- Registration system
+- Calendar integration
+- Email confirmations
+- Data export
+
+### 8.2 Phase 2 - 2-3 weeks
+- Referral tracking
+- Email automation
+- Mobile optimization
+
+---
+
+## 9. Risk Assessment
+
+### 9.1 Technical Risks
+- Calendar API limitations
+- Email deliverability issues
+- Scalability challenges
+- Third-party service dependencies
+
+### 9.2 Business Risks
+- User adoption challenges
+- Competition from established platforms
+- Data privacy regulations
+- Client-specific customization needs
+
+---
+
+## 10. Future Enhancements
+
+### 10.1 Advanced Features
+- Multi-language support
+- Advanced reporting and analytics
+- Mobile app development
+- AI-powered event recommendations
+- Integration with CRM systems
+- Virtual/hybrid event support
+- Automated social media posting
+- Advanced email marketing features
+
+### 10.2 Enterprise Features
+- White-label solutions
+- API for third-party integrations
+- Advanced user management
+- Custom branding options
+- Dedicated support
+
+---
+
+## 11. Appendices
+
+### 11.1 User Flow Diagrams
+## User Stories (Detailed)
+
+### Event Organizer Stories
+
+**Epic: Event Creation**
+- As an event organizer, I want to create an event page in under 5 minutes so that I can quickly set up events
+- As an event organizer, I want to preview my event page before publishing so that I can ensure it looks professional
+- As an event organizer, I want to duplicate previous events so that I can save time on similar events
+- As an event organizer, I want to set registration limits so that I can control event capacity
+
+**Epic: Attendee Management**
+- As an event organizer, I want to see real-time registration numbers so that I can track event popularity
+- As an event organizer, I want to send bulk messages to attendees so that I can communicate important updates
+- As an event organizer, I want to check-in attendees at the event so that I can track actual attendance
+- As an event organizer, I want to export attendee data so that I can follow up after the event
+
+**Epic: Analytics & Insights**
+- As an event organizer, I want to see which referral sources are most effective so that I can focus my promotion efforts
+- As an event organizer, I want to track email engagement so that I can improve my communication strategy
+- As an event organizer, I want to compare event performance so that I can optimize future events
+
+### Attendee Stories
+
+**Epic: Event Discovery & Registration**
+- As an attendee, I want to see all event details on one page so that I can make an informed decision
+- As an attendee, I want to register in 2 clicks or less so that the process is quick and easy
+- As an attendee, I want to receive immediate confirmation so that I know my registration was successful
+- As an attendee, I want the event automatically added to my calendar so that I don't forget
+
+**Epic: Event Experience**
+- As an attendee, I want to ask questions about the event so that I can get clarification
+- As an attendee, I want to share the event with colleagues so that they can also attend
+- As an attendee, I want to receive timely reminders so that I don't miss the event
+- As an attendee, I want to access event materials after the event so that I can reference them later
+
+### Admin/System Stories
+
+**Epic: System Management**
+- As a system admin, I want to monitor platform performance so that I can ensure uptime
+- As a system admin, I want to manage user permissions so that I can control access
+- As a system admin, I want to backup data regularly so that information is protected
+
+---
+### 11.2 Technical Architecture
+**Technology Stack:**
+- React.js or Next.js for modern UI (Aceternity UI for components and UI library)
+- TypeScript for type safety
+- Tailwind CSS for responsive design
+- React Hook Form for form management
+- React Query for data fetching
+
+**Key Components:**
+```
+src/
+├── components/
+│   ├── EventPage/
+│   │   ├── EventHeader.tsx
+│   │   ├── EventDetails.tsx
+│   │   ├── RegistrationForm.tsx
+│   │   └── QASection.tsx
+│   ├── Dashboard/
+│   │   ├── EventList.tsx
+│   │   ├── Analytics.tsx
+│   │   └── AttendeeManagement.tsx
+│   └── Common/
+│       ├── Calendar.tsx
+│       ├── EmailTemplates.tsx
+│       └── DataExport.tsx
+```
+
+### Backend Requirements
+
+**Technology Stack:**
+- Node.js with Express.js
+- PostgreSQL for primary database (firebase)
+- Uploadthing for file storage
+- JWT for authentication (firebase auth)
+
+**API Endpoints:**
+```
+/api/v1/
+├── events/
+│   ├── POST /create
+│   ├── GET /:id
+│   ├── PUT /:id
+│   └── DELETE /:id
+├── registrations/
+│   ├── POST /register
+│   ├── GET /event/:eventId
+│   └── PUT /:id/checkin
+├── referrals/
+│   ├── GET /track/:code
+│   └── GET /analytics/:eventId
+└── exports/
+    ├── GET /csv/:eventId
+    └── GET /excel/:eventId
+```
+
+### Database Schema
+
+**Core Tables:**
+```sql
+-- Events table
+CREATE TABLE events (
+    id UUID PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    start_date TIMESTAMP NOT NULL,
+    end_date TIMESTAMP NOT NULL,
+    location JSONB,
+    organizer_id UUID REFERENCES users(id),
+    settings JSONB,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Registrations table
+CREATE TABLE registrations (
+    id UUID PRIMARY KEY,
+    event_id UUID REFERENCES events(id),
+    attendee_email VARCHAR(255) NOT NULL,
+    attendee_name VARCHAR(255) NOT NULL,
+    form_data JSONB,
+    referral_code VARCHAR(50),
+    status VARCHAR(20) DEFAULT 'registered',
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Referral codes table
+CREATE TABLE referral_codes (
+    id UUID PRIMARY KEY,
+    code VARCHAR(50) UNIQUE NOT NULL,
+    event_id UUID REFERENCES events(id),
+    created_by UUID REFERENCES users(id),
+    usage_count INTEGER DEFAULT 0,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+```
+
+### Integration Specifications
+
+**Google Calendar API:**
+```javascript
+// Calendar event creation
+const calendarEvent = {
+  summary: event.title,
+  description: event.description,
+  start: {
+    dateTime: event.startDate,
+    timeZone: event.timezone
+  },
+  end: {
+    dateTime: event.endDate,
+    timeZone: event.timezone
+  },
+  location: event.location.address,
+  attendees: [{ email: attendee.email }]
+};
+```
+
+**Email Service Integration:**
+```javascript
+// Email template structure
+const emailTemplate = {
+  to: attendee.email,
+  template: 'event-confirmation',
+  data: {
+    eventTitle: event.title,
+    eventDate: event.startDate,
+    eventLocation: event.location,
+    calendarLink: generateCalendarLink(event),
+    attendeeName: attendee.name
+  }
+};
+```
+
+### Security Specifications
+
+**Authentication & Authorization:**
+- JWT tokens with 24-hour expiration
+- Refresh token rotation
+- Role-based access control (RBAC)
+- Rate limiting: 100 requests per minute per IP
+
+**Data Protection:**
+- AES-256 encryption for sensitive data
+- HTTPS only (TLS 1.3)
+- Input validation and sanitization
+- SQL injection prevention
+- XSS protection headers
+
+
+---
+
+## API Documentation Examples
+
+### Event Registration Endpoint
+
+```http
+POST /api/v1/registrations/register
+Content-Type: application/json
+
+{
+  "eventId": "uuid",
+  "attendee": {
+    "name": "John Doe",
+    "email": "john@company.com",
+    "company": "Tech Corp",
+    "dietary": "vegetarian"
+  },
+  "referralCode": "ABC123",
+  "customFields": {
+    "department": "Engineering",
+    "experience": "5+ years"
+  }
+}
+```
+
+**Response:**
+```json
+{
+  "success": true,
+  "registrationId": "uuid",
+  "calendarLink": "https://calendar.google.com/...",
+  "confirmationEmail": "sent",
+  "message": "Registration successful"
+}
+```
+
+### Data Export Endpoint
+
+```http
+GET /api/v1/exports/csv/:eventId
+Authorization: Bearer <token>
+Query Parameters:
+  - fields: name,email,company,registrationDate
+  - format: csv|excel
+  - dateRange: 2024-01-01,2024-12-31
+```
+
+---
+
+
+### Infrastructure
+- Vercel for hosting
+- Firebase for storage and Auth
+
+### Monitoring
+- Application monitoring with Sentry
+- Performance monitoring with New Relic
+- Uptime monitoring with Pingdom
+- Log aggregation with CloudWatch
+
+---
+
+**Document Status:** Draft v1.0  

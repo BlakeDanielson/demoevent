@@ -1,0 +1,11 @@
+# Task ID: 8
+# Title: Develop Data Export and Analytics Dashboard
+# Status: pending
+# Dependencies: 3, 6
+# Priority: medium
+# Description: Implement data export and analytics dashboard for event and registration metrics.
+# Details:
+Build data export functionality (CSV, Excel) with custom field selection and filtering. Create an analytics dashboard to display registration metrics, attendance, referral performance, and email engagement. Use React Query for data fetching and export libraries (e.g., exceljs v4, csv-writer v6).
+
+# Test Strategy:
+Test data export in multiple formats, filtering, and dashboard visualization. Verify accuracy of metrics and export data.
