@@ -23,13 +23,13 @@ Use the command `npx create-next-app@latest my-project --typescript --eslint --a
 ### Details:
 Install Tailwind CSS, @tailwindcss/postcss, and postcss. Generate Tailwind and PostCSS config files, and update the content paths in tailwind.config.js. Import Tailwind in the global CSS file.
 
-## 3. Set Up Linting and Formatting Tools [pending]
+## 3. Set Up Linting and Formatting Tools [done]
 ### Dependencies: 1.1
 ### Description: Configure ESLint and Prettier for code quality and formatting consistency.
 ### Details:
 Ensure ESLint is set up (from Next.js init), install Prettier, and configure both tools to work together. Add lint and format scripts to package.json.
 
-## 4. Configure CI/CD Pipeline with GitHub Actions [pending]
+## 4. Configure CI/CD Pipeline with GitHub Actions [done]
 ### Dependencies: 1.3
 ### Description: Set up GitHub Actions workflows for linting, testing, and deployment.
 ### Details:
