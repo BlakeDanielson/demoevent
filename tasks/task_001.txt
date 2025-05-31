@@ -41,7 +41,7 @@ Create workflow YAML files to automate linting, testing, and deployment to Verce
 ### Details:
 Install Firebase SDK, initialize Firebase in the project, and configure environment variables for Firebase credentials.
 
-## 6. Set Up Sentry and New Relic Monitoring [pending]
+## 6. Set Up Sentry and New Relic Monitoring [cancelled]
 ### Dependencies: 1.1
 ### Description: Integrate Sentry for error tracking and New Relic for performance monitoring.
 ### Details:
@@ -52,4 +52,14 @@ Install and configure Sentry and New Relic SDKs, set up environment variables, a
 ### Description: Deploy the application and confirm all integrations (Firebase, Sentry, New Relic) and CI/CD are functioning correctly.
 ### Details:
 Trigger a deployment via the CI/CD pipeline, verify the app is live, and check that Firebase, Sentry, and New Relic are reporting as expected.
+<info added on 2025-05-31T19:17:38.256Z>
+Trigger a deployment via the GitHub Actions CI/CD pipeline and verify the following:
+
+1. The CI/CD pipeline runs successfully without errors
+2. The application builds and deploys correctly to the hosting environment
+3. Firebase configuration is properly integrated and functional (verify even with placeholder values)
+4. All linting and formatting checks pass during the build process
+
+Document any issues encountered during verification and confirm the application is live and accessible.
+</info added on 2025-05-31T19:17:38.256Z>
 
