@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import EventForm from '@/components/EventForm';
 import { EventFormData } from '@/lib/validations/event';
 import { Event } from '@/lib/types/event';
+import { geocodeAddress, formatFullAddress } from '@/lib/geocoding';
 
 export default function CreateEventPage() {
   const [isLoading, setIsLoading] = useState(false);
@@ -18,6 +19,33 @@ export default function CreateEventPage() {
       const startDateTime = new Date(`${data.startDate}T${data.startTime}`);
       const endDateTime = new Date(`${data.endDate}T${data.endTime}`);
       
+      // Geocode the address to get coordinates
+      let latitude: number | undefined;
+      let longitude: number | undefined;
+      
+      try {
+        const fullAddress = formatFullAddress(
+          data.address,
+          data.city,
+          data.state,
+          data.zipCode,
+          data.country
+        );
+        
+        const geocodeResult = await geocodeAddress(fullAddress);
+        latitude = geocodeResult.coordinates.lat;
+        longitude = geocodeResult.coordinates.lng;
+        
+        console.log('Geocoded address:', {
+          address: fullAddress,
+          coordinates: geocodeResult.coordinates,
+          formattedAddress: geocodeResult.formattedAddress
+        });
+      } catch (geocodeError) {
+        console.warn('Failed to geocode address:', geocodeError);
+        // Continue without coordinates - the map will still work with address-only
+      }
+      
       const event: Omit<Event, 'id' | 'createdAt' | 'updatedAt'> = {
         title: data.title,
         description: data.description,
@@ -29,6 +57,8 @@ export default function CreateEventPage() {
           state: data.state,
           zipCode: data.zipCode,
           country: data.country,
+          latitude,
+          longitude,
         },
         organizerName: data.organizerName,
         organizerEmail: data.organizerEmail,
